@@ -8,7 +8,7 @@ Is a human resources manager for a small bussiness that only employs Lego people
 
 I decide to use React because I think it is the best way to managing components and make the code more short and simple. To make it more scaleable I decided to use Redux with redux-thunk middleware because it gives me dispatch on hands and I can handle my states with actions and reducers, and I don`t have to pass a lot of states between my components.
 
-If I have more time, I probably think about how I can write better my code and change the way I code the `edit an user` freature. I'll study more tests, and try to write my components tests.
+If I have more time, I probably think about how I can write better my code and change the way I code the `edit an user` freature. I'll study more tests, and try to write my components tests. And I would do a page of `User not found` or `Page not found` to my app doesn't break the interface.
 
 ## Getting Started
 
