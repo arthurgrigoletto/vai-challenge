@@ -1,4 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Vai Frontend UI Challenge
+
+## Overview
+
+For this test I built a Proof Of Concept application with the technologies like React and Redux. The app is going to fetch data from [Random User](randomuser.com).
+
+Is a human resources manager for a small bussiness that only employs Lego people. As part of the onboarding process, the company wants to ask all new Lego employees to create a company profile with their basic information so that can have easy access to employee data and monitor the company's human resources from an HR dashboard. Some examples of how she will use these profiles in the future are: know when it's someone's birthday, see everyone's role in the company and what department they belong to, take notes on performance reviews, etc). Although it will take some time to build all of this functionality, for the MVP, has asked for the basics. (Ability to create, view, and edit user profiles).
+
+I decide to use React because I think he is the best way to managing components and make the code more short and simple. To make it more scaleable I decided to use Redux with redux-thunk middleware because it give me dispatch on hands and I can handle my states with actions and reducers, and I don`t have to pass states between my components.
+
+If I have more time, I probably think about how I can write simplier code and change the way I code the `edit an user` freature. I'll study more tests, and try to write my components tests.
+
+## Getting Started
+
+In the directory of your choice, run:
+
+```bash
+git clone https://github.com/arthurgrigoletto/vai-challenge
+```
+
+This command will clone the project locally.
+
+In the project directory, run:
+
+```bash
+  yarn
+
+  or
+
+  npm install
+```
+
+This command will install all dependencies will be need to run the project
+
+## Login
+
+In the [documentation](https://randomuser.me/documentation#seeds) we can see an endpoint that allways provide us the same user and this make possible to have this login freature.
+
+You can login with the user bellow:
+
+```json
+  username: 'blueelephant921'
+  password: 'ccccccc'
+```
 
 ## Available Scripts
 
@@ -9,60 +52,26 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [Yarn](https://yarnpkg.com/pt-BR/) - Package manager
+- [ESLint](https://eslint.org/) - Provide a pluggable linting utility for JavaScript.
+- [axios](https://github.com/axios/axios) - Managing Http requests
+- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - Library that helps encoding JWTs token
+- [jwt-decode](https://www.npmjs.com/package/jwt-decode) - Library that helps decoding JWTs token
+- [prop-types](https://www.npmjs.com/package/prop-types) - Use prop-types to document the intended types of properties passed to components
+- [react](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [react-router-dom](https://reacttraining.com/react-router/) - Managing routes in React
+- [react-redux](https://react-redux.js.org/) - Official React bindings for Redux
+- [redux](https://redux.js.org/) - A predictable state container for JavaScript apps.
+- [redux-thunk](https://github.com/reduxjs/redux-thunk) - Managing async behavior in Redux
+- [Jest](https://jestjs.io/) - Testing Framework

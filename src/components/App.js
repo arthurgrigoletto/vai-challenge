@@ -44,14 +44,10 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <Route exact path="/login" component={Login} />
             <Switch>
+              <Route exact path="/login" component={Login} />
               <PrivateRoute exact path="/" component={Profiles} />
-            </Switch>
-            <Switch>
               <PrivateRoute exact path="/:id" component={Profile} />
-            </Switch>
-            <Switch>
               <PrivateRoute exact path="/:id/edit" component={EditProfile} />
             </Switch>
           </div>
