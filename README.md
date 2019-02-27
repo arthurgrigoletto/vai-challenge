@@ -6,9 +6,9 @@ For this test I built a Proof Of Concept application with the technologies like 
 
 Is a human resources manager for a small bussiness that only employs Lego people. As part of the onboarding process, the company wants to ask all new Lego employees to create a company profile with their basic information so that can have easy access to employee data and monitor the company's human resources from an HR dashboard. Some examples of how she will use these profiles in the future are: know when it's someone's birthday, see everyone's role in the company and what department they belong to, take notes on performance reviews, etc). Although it will take some time to build all of this functionality, for the MVP, has asked for the basics. (Ability to create, view, and edit user profiles).
 
-I decide to use React because I think he is the best way to managing components and make the code more short and simple. To make it more scaleable I decided to use Redux with redux-thunk middleware because it give me dispatch on hands and I can handle my states with actions and reducers, and I don`t have to pass states between my components.
+I decide to use React because I think it is the best way to managing components and make the code more short and simple. To make it more scaleable I decided to use Redux with redux-thunk middleware because it gives me dispatch on hands and I can handle my states with actions and reducers, and I don`t have to pass a lot of states between my components.
 
-If I have more time, I probably think about how I can write simplier code and change the way I code the `edit an user` freature. I'll study more tests, and try to write my components tests.
+If I have more time, I probably think about how I can write better my code and change the way I code the `edit an user` freature. I'll study more tests, and try to write my components tests.
 
 ## Getting Started
 
@@ -60,6 +60,15 @@ Launches the test runner in the interactive watch mode.
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## Routes
+
+| Endpoint    | Description                  | Access  |
+| ----------- | ---------------------------- | ------- |
+| `/`         | Dashboard with list of users | Private |
+| `/:id`      | User's Detail Page           | Private |
+| `/:id/edit` | User's Edit Page             | Private |
+| `/login`    | Login Page                   | Public  |
 
 ## Built With
 
