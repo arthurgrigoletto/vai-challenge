@@ -3,7 +3,8 @@ import {
   PROFILE_LOADING,
   GET_PROFILES,
   GET_PROFILE,
-  DELETE_PROFILE
+  DELETE_PROFILE,
+  UPDATE_PROFILE
 } from "../../actions/types";
 
 describe("Profile Reducer Test", () => {
@@ -14,6 +15,7 @@ describe("Profile Reducer Test", () => {
 
     const newState = profilesReducer([], action);
 
+    expect(newState).toHaveProperty("loading");
     expect(newState).toEqual({ loading: true });
   });
 
@@ -25,6 +27,9 @@ describe("Profile Reducer Test", () => {
 
     const newState = profilesReducer([], action);
 
+    expect(newState).toHaveProperty("loading");
+    expect(newState).toHaveProperty("profiles");
+    expect(newState.profiles).toHaveLength(1);
     expect(newState).toEqual({
       loading: false,
       profiles: [{ name: "Teste", nat: "BR" }]
@@ -39,9 +44,70 @@ describe("Profile Reducer Test", () => {
 
     const newState = profilesReducer([], action);
 
+    expect(newState).toHaveProperty("loading");
+    expect(newState).toHaveProperty("profile");
+    expect(newState.profile).toHaveProperty("name");
+    expect(newState.profile).toHaveProperty("nat");
     expect(newState).toEqual({
       loading: false,
       profile: { name: "Teste", nat: "BR" }
+    });
+  });
+
+  it("handle action of type UPDATE_PROFILE", () => {
+    const payload = {
+      name: "Teste Atualizado",
+      login: {
+        uuid: 1234
+      }
+    };
+
+    const action = {
+      type: UPDATE_PROFILE,
+      payload
+    };
+
+    const initialState = {
+      profiles: [
+        {
+          name: "Teste 1",
+          login: {
+            uuid: 12
+          }
+        },
+        {
+          name: "Teste 2",
+          login: {
+            uuid: 123
+          }
+        }
+      ]
+    };
+
+    const newState = profilesReducer(initialState, action);
+
+    expect(newState.profiles).toHaveLength(3);
+    expect(newState).toEqual({
+      profiles: [
+        {
+          name: "Teste Atualizado",
+          login: {
+            uuid: 1234
+          }
+        },
+        {
+          name: "Teste 1",
+          login: {
+            uuid: 12
+          }
+        },
+        {
+          name: "Teste 2",
+          login: {
+            uuid: 123
+          }
+        }
+      ]
     });
   });
 
@@ -70,6 +136,7 @@ describe("Profile Reducer Test", () => {
 
     const newState = profilesReducer(initialState, action);
 
+    expect(newState.profiles).toHaveLength(1);
     expect(newState).toEqual({
       profiles: [
         {
