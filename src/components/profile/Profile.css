@@ -1,0 +1,60 @@
+.img-responsive {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  border: 3px solid #848281;
+}
+
+.basic-info {
+}
+
+.profile-name {
+  display: block;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 40pt;
+  letter-spacing: 3px;
+}
+
+.custom-hr {
+  border: 1px dashed #d2d2d2;
+}
+
+.titles {
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.profile-info {
+  color: #666666;
+}
+
+.profile-address {
+  text-transform: capitalize;
+}
+
+.btn-excluir {
+  background: #cc0000;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.btn-excluir:hover {
+  background: #b30000;
+  color: #fff;
+}
+
+.btn-profile {
+  background: #1fbea4;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.btn-profile:hover {
+  background: #138b71;
+  color: #fff;
+}

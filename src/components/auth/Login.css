@@ -1,0 +1,9 @@
+.image-login {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.button-login {
+  background: #00bfa3;
+}
