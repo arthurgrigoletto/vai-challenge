@@ -13,7 +13,7 @@ import Loadmang from "../utils/Loadmang";
 const Login = Loadmang(() => import("./auth/Login"));
 const Profiles = Loadmang(() => import("./profiles/Profiles"));
 const Profile = Loadmang(() => import("./profile/Profile"));
-const EditProfile = Loadmang(() => import("./profile/EditProfile"));
+const EditProfile = Loadmang(() => import("./edit-profile/EditProfile"));
 
 const store = configureStore();
 
